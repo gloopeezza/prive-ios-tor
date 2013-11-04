@@ -516,6 +516,10 @@
 					"$(inherited)",
 					"/Users/ploddi/Projects/prive-ios-tor/dependencies/lib",
 				);
+				OTHER_LDFLAGS = (
+					"-Objc",
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/dependencies/submodules/CocoaAsyncSocket/GCD\"";
 				WRAPPER_EXTENSION = app;
@@ -539,6 +543,10 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/ploddi/Projects/prive-ios-tor/dependencies/lib",
+				);
+				OTHER_LDFLAGS = (
+					"-Objc",
+					"-all_load",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/dependencies/submodules/CocoaAsyncSocket/GCD\"";
