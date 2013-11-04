@@ -17,7 +17,7 @@
     NSError *error;
     if ([fm fileExistsAtPath:torConfPath]) {
         [fm removeItemAtPath:torConfPath error:&error];
-    };
+    }
 
     if (error) {
         NSLog(@"Error while clearing tor config %@", error);
@@ -35,7 +35,7 @@
     BOOL dir;
     if (![fm fileExistsAtPath:torConfDir isDirectory:&dir]) {
         [[NSFileManager defaultManager] createDirectoryAtPath:torConfDir withIntermediateDirectories:NO attributes:nil error:&error];
-    };
+    }
     
     if (![fm fileExistsAtPath:torConfPath]) {
         [[NSFileManager defaultManager] copyItemAtPath:torConfSamplePath toPath:torConfPath error:&error];
