@@ -7,11 +7,20 @@
 //
 
 #import "AppDelegate.h"
+#import "AppDelegate+Tor.h"
+
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
+#ifdef DEBUG
+    [self clearConfigFile];
+#endif
+    
+    [self copyTorConfigIfNeeded];
+    
     // Override point for customization after application launch.
     return YES;
 }

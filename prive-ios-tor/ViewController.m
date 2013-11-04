@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "HITorManager.h"
 
 @interface ViewController ()
 
@@ -24,6 +25,9 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)startTor:(id)sender {
+    [[HITorManager defaultManager] start];
 }
 
 @end

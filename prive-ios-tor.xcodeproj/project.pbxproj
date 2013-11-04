@@ -21,6 +21,21 @@
 		F7544FF718277BB50042D6CE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7544FD918277BB50042D6CE /* UIKit.framework */; };
 		F7544FFF18277BB50042D6CE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F7544FFD18277BB50042D6CE /* InfoPlist.strings */; };
 		F754500118277BB50042D6CE /* prive_ios_torTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F754500018277BB50042D6CE /* prive_ios_torTests.m */; };
+		F754501518277C8A0042D6CE /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F754500A18277C8A0042D6CE /* libcrypto.a */; };
+		F754501618277C8A0042D6CE /* libevent_core.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F754500B18277C8A0042D6CE /* libevent_core.a */; };
+		F754501718277C8A0042D6CE /* libevent_extra.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F754500C18277C8A0042D6CE /* libevent_extra.a */; };
+		F754501818277C8A0042D6CE /* libevent_openssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F754500D18277C8A0042D6CE /* libevent_openssl.a */; };
+		F754501918277C8A0042D6CE /* libevent_pthreads.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F754500E18277C8A0042D6CE /* libevent_pthreads.a */; };
+		F754501A18277C8A0042D6CE /* libevent.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F754500F18277C8A0042D6CE /* libevent.a */; };
+		F754501B18277C8A0042D6CE /* libor-crypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F754501018277C8A0042D6CE /* libor-crypto.a */; };
+		F754501C18277C8A0042D6CE /* libor-event.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F754501118277C8A0042D6CE /* libor-event.a */; };
+		F754501D18277C8A0042D6CE /* libor.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F754501218277C8A0042D6CE /* libor.a */; };
+		F754501E18277C8A0042D6CE /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F754501318277C8A0042D6CE /* libssl.a */; };
+		F754501F18277C8A0042D6CE /* libtor.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F754501418277C8A0042D6CE /* libtor.a */; };
+		F754502318277D0C0042D6CE /* HITorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F754502218277D0C0042D6CE /* HITorManager.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F754502518277D140042D6CE /* torrc in Resources */ = {isa = PBXBuildFile; fileRef = F754502418277D140042D6CE /* torrc */; };
+		F754502818277D3F0042D6CE /* AppDelegate+Tor.m in Sources */ = {isa = PBXBuildFile; fileRef = F754502718277D3F0042D6CE /* AppDelegate+Tor.m */; };
+		F754502E18277F460042D6CE /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F754502D18277F460042D6CE /* libz.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +68,25 @@
 		F7544FFC18277BB50042D6CE /* prive-ios-torTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "prive-ios-torTests-Info.plist"; sourceTree = "<group>"; };
 		F7544FFE18277BB50042D6CE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F754500018277BB50042D6CE /* prive_ios_torTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = prive_ios_torTests.m; sourceTree = "<group>"; };
+		F754500A18277C8A0042D6CE /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = dependencies/lib/libcrypto.a; sourceTree = "<group>"; };
+		F754500B18277C8A0042D6CE /* libevent_core.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libevent_core.a; path = dependencies/lib/libevent_core.a; sourceTree = "<group>"; };
+		F754500C18277C8A0042D6CE /* libevent_extra.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libevent_extra.a; path = dependencies/lib/libevent_extra.a; sourceTree = "<group>"; };
+		F754500D18277C8A0042D6CE /* libevent_openssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libevent_openssl.a; path = dependencies/lib/libevent_openssl.a; sourceTree = "<group>"; };
+		F754500E18277C8A0042D6CE /* libevent_pthreads.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libevent_pthreads.a; path = dependencies/lib/libevent_pthreads.a; sourceTree = "<group>"; };
+		F754500F18277C8A0042D6CE /* libevent.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libevent.a; path = dependencies/lib/libevent.a; sourceTree = "<group>"; };
+		F754501018277C8A0042D6CE /* libor-crypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libor-crypto.a"; path = "dependencies/lib/libor-crypto.a"; sourceTree = "<group>"; };
+		F754501118277C8A0042D6CE /* libor-event.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libor-event.a"; path = "dependencies/lib/libor-event.a"; sourceTree = "<group>"; };
+		F754501218277C8A0042D6CE /* libor.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libor.a; path = dependencies/lib/libor.a; sourceTree = "<group>"; };
+		F754501318277C8A0042D6CE /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = dependencies/lib/libssl.a; sourceTree = "<group>"; };
+		F754501418277C8A0042D6CE /* libtor.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libtor.a; path = dependencies/lib/libtor.a; sourceTree = "<group>"; };
+		F754502118277D0C0042D6CE /* HITorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HITorManager.h; sourceTree = "<group>"; };
+		F754502218277D0C0042D6CE /* HITorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HITorManager.m; sourceTree = "<group>"; };
+		F754502418277D140042D6CE /* torrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = torrc; sourceTree = "<group>"; };
+		F754502618277D3F0042D6CE /* AppDelegate+Tor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+Tor.h"; sourceTree = "<group>"; };
+		F754502718277D3F0042D6CE /* AppDelegate+Tor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+Tor.m"; sourceTree = "<group>"; };
+		F754502918277DB70042D6CE /* micro-revision.i */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c.preprocessed; path = "micro-revision.i"; sourceTree = "<group>"; };
+		F754502C18277E160042D6CE /* HIMainHack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HIMainHack.h; sourceTree = "<group>"; };
+		F754502D18277F460042D6CE /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +94,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F754502E18277F460042D6CE /* libz.dylib in Frameworks */,
 				F7544FD818277BB50042D6CE /* CoreGraphics.framework in Frameworks */,
 				F7544FDA18277BB50042D6CE /* UIKit.framework in Frameworks */,
+				F754501518277C8A0042D6CE /* libcrypto.a in Frameworks */,
+				F754501718277C8A0042D6CE /* libevent_extra.a in Frameworks */,
+				F754501618277C8A0042D6CE /* libevent_core.a in Frameworks */,
+				F754501B18277C8A0042D6CE /* libor-crypto.a in Frameworks */,
+				F754501D18277C8A0042D6CE /* libor.a in Frameworks */,
+				F754501A18277C8A0042D6CE /* libevent.a in Frameworks */,
+				F754501918277C8A0042D6CE /* libevent_pthreads.a in Frameworks */,
+				F754501818277C8A0042D6CE /* libevent_openssl.a in Frameworks */,
+				F754501C18277C8A0042D6CE /* libor-event.a in Frameworks */,
+				F754501E18277C8A0042D6CE /* libssl.a in Frameworks */,
 				F7544FD618277BB50042D6CE /* Foundation.framework in Frameworks */,
+				F754501F18277C8A0042D6CE /* libtor.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +147,18 @@
 		F7544FD418277BB50042D6CE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F754502D18277F460042D6CE /* libz.dylib */,
+				F754500A18277C8A0042D6CE /* libcrypto.a */,
+				F754500B18277C8A0042D6CE /* libevent_core.a */,
+				F754500C18277C8A0042D6CE /* libevent_extra.a */,
+				F754500D18277C8A0042D6CE /* libevent_openssl.a */,
+				F754500E18277C8A0042D6CE /* libevent_pthreads.a */,
+				F754500F18277C8A0042D6CE /* libevent.a */,
+				F754501018277C8A0042D6CE /* libor-crypto.a */,
+				F754501118277C8A0042D6CE /* libor-event.a */,
+				F754501218277C8A0042D6CE /* libor.a */,
+				F754501318277C8A0042D6CE /* libssl.a */,
+				F754501418277C8A0042D6CE /* libtor.a */,
 				F7544FD518277BB50042D6CE /* Foundation.framework */,
 				F7544FD718277BB50042D6CE /* CoreGraphics.framework */,
 				F7544FD918277BB50042D6CE /* UIKit.framework */,
@@ -112,6 +170,7 @@
 		F7544FDB18277BB50042D6CE /* prive-ios-tor */ = {
 			isa = PBXGroup;
 			children = (
+				F754502018277D050042D6CE /* Tor */,
 				F7544FE418277BB50042D6CE /* AppDelegate.h */,
 				F7544FE518277BB50042D6CE /* AppDelegate.m */,
 				F7544FE718277BB50042D6CE /* Main.storyboard */,
@@ -150,6 +209,20 @@
 				F7544FFD18277BB50042D6CE /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F754502018277D050042D6CE /* Tor */ = {
+			isa = PBXGroup;
+			children = (
+				F754502918277DB70042D6CE /* micro-revision.i */,
+				F754502418277D140042D6CE /* torrc */,
+				F754502C18277E160042D6CE /* HIMainHack.h */,
+				F754502118277D0C0042D6CE /* HITorManager.h */,
+				F754502218277D0C0042D6CE /* HITorManager.m */,
+				F754502618277D3F0042D6CE /* AppDelegate+Tor.h */,
+				F754502718277D3F0042D6CE /* AppDelegate+Tor.m */,
+			);
+			name = Tor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,6 +303,7 @@
 			files = (
 				F7544FEE18277BB50042D6CE /* Images.xcassets in Resources */,
 				F7544FE018277BB50042D6CE /* InfoPlist.strings in Resources */,
+				F754502518277D140042D6CE /* torrc in Resources */,
 				F7544FE918277BB50042D6CE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -251,7 +325,9 @@
 			files = (
 				F7544FEC18277BB50042D6CE /* ViewController.m in Sources */,
 				F7544FE618277BB50042D6CE /* AppDelegate.m in Sources */,
+				F754502318277D0C0042D6CE /* HITorManager.m in Sources */,
 				F7544FE218277BB50042D6CE /* main.m in Sources */,
+				F754502818277D3F0042D6CE /* AppDelegate+Tor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,12 +452,23 @@
 		F754500518277BB50042D6CE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "prive-ios-tor/prive-ios-tor-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"$(SRCROOT)/dependencies/include\"/**",
+				);
 				INFOPLIST_FILE = "prive-ios-tor/prive-ios-tor-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/ploddi/Projects/prive-ios-tor/dependencies/lib",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -389,12 +476,23 @@
 		F754500618277BB50042D6CE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "prive-ios-tor/prive-ios-tor-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"$(SRCROOT)/dependencies/include\"/**",
+				);
 				INFOPLIST_FILE = "prive-ios-tor/prive-ios-tor-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/ploddi/Projects/prive-ios-tor/dependencies/lib",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
