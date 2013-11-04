@@ -74,8 +74,8 @@ DataDirectory ~/Library/tor
 #HiddenServiceDir /Users/ploddi/Projects/Frameworks/libtor/tmp/tor-0.2.3.25-armv7/var/lib/tor/other_hidden_service/
 #HiddenServicePort 80 127.0.0.1:80
 
-#HiddenServiceDir ~/Library/tor/
-#HiddenServicePort 22 127.0.0.1:22
+HiddenServiceDir ~/Library/tor/
+HiddenServicePort 22 127.0.0.1:22
 
 ################ This section is just for relays #####################
 #

@@ -21,6 +21,9 @@
     
     [self copyTorConfigIfNeeded];
     
+    NSString *s = [NSString stringWithContentsOfFile:[@"~/Library/tor/hostname" stringByExpandingTildeInPath] encoding:NSASCIIStringEncoding error:nil];
+    NSLog(@"Hidden service hostname: %@",s);
+    
     // Override point for customization after application launch.
     return YES;
 }

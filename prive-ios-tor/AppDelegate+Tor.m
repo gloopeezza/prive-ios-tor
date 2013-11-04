@@ -12,12 +12,11 @@
 
 - (void)clearConfigFile {
     NSFileManager *fm = [NSFileManager defaultManager];
-    NSString *torConfDir = [@"~/Library/tor" stringByExpandingTildeInPath];
     NSString *torConfPath = [@"~/Library/tor/torrc" stringByExpandingTildeInPath];
     
     NSError *error;
     if ([fm fileExistsAtPath:torConfPath]) {
-        [fm removeItemAtPath:torConfDir error:&error];
+        [fm removeItemAtPath:torConfPath error:&error];
     };
 
     if (error) {
@@ -33,8 +32,12 @@
     NSString *torConfPath = [@"~/Library/tor/torrc" stringByExpandingTildeInPath];
     NSString *torConfSamplePath = [[NSBundle mainBundle] pathForResource:@"torrc" ofType:nil];
     
-    if (![fm fileExistsAtPath:torConfPath]) {
+    BOOL dir;
+    if (![fm fileExistsAtPath:torConfDir isDirectory:&dir]) {
         [[NSFileManager defaultManager] createDirectoryAtPath:torConfDir withIntermediateDirectories:NO attributes:nil error:&error];
+    };
+    
+    if (![fm fileExistsAtPath:torConfPath]) {
         [[NSFileManager defaultManager] copyItemAtPath:torConfSamplePath toPath:torConfPath error:&error];
     }
     
