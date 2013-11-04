@@ -8,12 +8,25 @@
 
 #import "AppDelegate.h"
 #import "AppDelegate+Tor.h"
+#import "GCDAsyncSocket.h"
+#import "PRVSocketDelegate.h"
 
 
-@implementation AppDelegate
+@implementation AppDelegate {
+    PRVSocketDelegate *_delegate;
+    GCDAsyncSocket *_socket;
+}
+
+- (void)startHelloSocketService {
+    _delegate = [[PRVSocketDelegate alloc] init];
+    _socket = [[GCDAsyncSocket alloc] initWithDelegate:_delegate delegateQueue:dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)];
+    NSError *error;
+    [_socket acceptOnPort:9999 error:&error];
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [self startHelloSocketService];
     
 #ifdef DEBUG
     [self clearConfigFile];

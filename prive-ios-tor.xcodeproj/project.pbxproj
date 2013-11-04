@@ -36,6 +36,8 @@
 		F754502518277D140042D6CE /* torrc in Resources */ = {isa = PBXBuildFile; fileRef = F754502418277D140042D6CE /* torrc */; };
 		F754502818277D3F0042D6CE /* AppDelegate+Tor.m in Sources */ = {isa = PBXBuildFile; fileRef = F754502718277D3F0042D6CE /* AppDelegate+Tor.m */; };
 		F754502E18277F460042D6CE /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F754502D18277F460042D6CE /* libz.dylib */; };
+		F754508918279CA10042D6CE /* libprive-ios-tor-dependencies.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F754506718279C1C0042D6CE /* libprive-ios-tor-dependencies.a */; };
+		F754508D1827A21B0042D6CE /* PRVSocketDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F754508C1827A21B0042D6CE /* PRVSocketDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = F7544FD118277BB50042D6CE;
 			remoteInfo = "prive-ios-tor";
+		};
+		F754506618279C1C0042D6CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F754506118279C1B0042D6CE /* prive-ios-tor-dependencies.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F754503818279C1B0042D6CE;
+			remoteInfo = "prive-ios-tor-dependencies";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -87,6 +96,9 @@
 		F754502918277DB70042D6CE /* micro-revision.i */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c.preprocessed; path = "micro-revision.i"; sourceTree = "<group>"; };
 		F754502C18277E160042D6CE /* HIMainHack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HIMainHack.h; sourceTree = "<group>"; };
 		F754502D18277F460042D6CE /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		F754506118279C1B0042D6CE /* prive-ios-tor-dependencies.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "prive-ios-tor-dependencies.xcodeproj"; path = "prive-ios-tor-dependencies/prive-ios-tor-dependencies.xcodeproj"; sourceTree = "<group>"; };
+		F754508B1827A21B0042D6CE /* PRVSocketDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRVSocketDelegate.h; sourceTree = "<group>"; };
+		F754508C1827A21B0042D6CE /* PRVSocketDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRVSocketDelegate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F754508918279CA10042D6CE /* libprive-ios-tor-dependencies.a in Frameworks */,
 				F754502E18277F460042D6CE /* libz.dylib in Frameworks */,
 				F7544FD818277BB50042D6CE /* CoreGraphics.framework in Frameworks */,
 				F7544FDA18277BB50042D6CE /* UIKit.framework in Frameworks */,
@@ -163,6 +176,7 @@
 				F7544FD718277BB50042D6CE /* CoreGraphics.framework */,
 				F7544FD918277BB50042D6CE /* UIKit.framework */,
 				F7544FF418277BB50042D6CE /* XCTest.framework */,
+				F754506118279C1B0042D6CE /* prive-ios-tor-dependencies.xcodeproj */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -170,6 +184,7 @@
 		F7544FDB18277BB50042D6CE /* prive-ios-tor */ = {
 			isa = PBXGroup;
 			children = (
+				F754508A18279CE80042D6CE /* Networking */,
 				F754502018277D050042D6CE /* Tor */,
 				F7544FE418277BB50042D6CE /* AppDelegate.h */,
 				F7544FE518277BB50042D6CE /* AppDelegate.m */,
@@ -223,6 +238,23 @@
 				F754502718277D3F0042D6CE /* AppDelegate+Tor.m */,
 			);
 			name = Tor;
+			sourceTree = "<group>";
+		};
+		F754506218279C1B0042D6CE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F754506718279C1C0042D6CE /* libprive-ios-tor-dependencies.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F754508A18279CE80042D6CE /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				F754508B1827A21B0042D6CE /* PRVSocketDelegate.h */,
+				F754508C1827A21B0042D6CE /* PRVSocketDelegate.m */,
+			);
+			name = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,6 +320,12 @@
 			mainGroup = F7544FC918277BB50042D6CE;
 			productRefGroup = F7544FD318277BB50042D6CE /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = F754506218279C1B0042D6CE /* Products */;
+					ProjectRef = F754506118279C1B0042D6CE /* prive-ios-tor-dependencies.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				F7544FD118277BB50042D6CE /* prive-ios-tor */,
@@ -295,6 +333,16 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		F754506718279C1C0042D6CE /* libprive-ios-tor-dependencies.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libprive-ios-tor-dependencies.a";
+			remoteRef = F754506618279C1C0042D6CE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		F7544FD018277BB50042D6CE /* Resources */ = {
@@ -323,6 +371,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F754508D1827A21B0042D6CE /* PRVSocketDelegate.m in Sources */,
 				F7544FEC18277BB50042D6CE /* ViewController.m in Sources */,
 				F7544FE618277BB50042D6CE /* AppDelegate.m in Sources */,
 				F754502318277D0C0042D6CE /* HITorManager.m in Sources */,
@@ -468,7 +517,7 @@
 					"/Users/ploddi/Projects/prive-ios-tor/dependencies/lib",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "";
+				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/dependencies/submodules/CocoaAsyncSocket/GCD\"";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -492,7 +541,7 @@
 					"/Users/ploddi/Projects/prive-ios-tor/dependencies/lib",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "";
+				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/dependencies/submodules/CocoaAsyncSocket/GCD\"";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

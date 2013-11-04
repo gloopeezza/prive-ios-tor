@@ -1,0 +1,3 @@
+[submodule "dependencies/submodules/CocoaAsyncSocket"]
+	path = dependencies/submodules/CocoaAsyncSocket
+	url = https://github.com/robbiehanson/CocoaAsyncSocket.git
