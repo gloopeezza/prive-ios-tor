@@ -9,6 +9,6 @@
 #import <Foundation/Foundation.h>
 #import "GCDAsyncSocket.h"
 
-@interface PRVSocketDelegate : NSObject<GCDAsyncSocketDelegate>
+@interface PRVGCDSocketDelegate : NSObject<GCDAsyncSocketDelegate>
 
 @end

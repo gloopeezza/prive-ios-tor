@@ -37,7 +37,7 @@
 		F754502818277D3F0042D6CE /* AppDelegate+Tor.m in Sources */ = {isa = PBXBuildFile; fileRef = F754502718277D3F0042D6CE /* AppDelegate+Tor.m */; };
 		F754502E18277F460042D6CE /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F754502D18277F460042D6CE /* libz.dylib */; };
 		F754508918279CA10042D6CE /* libprive-ios-tor-dependencies.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F754506718279C1C0042D6CE /* libprive-ios-tor-dependencies.a */; };
-		F754508D1827A21B0042D6CE /* PRVSocketDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F754508C1827A21B0042D6CE /* PRVSocketDelegate.m */; };
+		F754508D1827A21B0042D6CE /* PRVGCDSocketDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F754508C1827A21B0042D6CE /* PRVGCDSocketDelegate.m */; };
 		F79954401828D74F009DECED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7544FD518277BB50042D6CE /* Foundation.framework */; };
 		F79954411828D74F009DECED /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7544FD718277BB50042D6CE /* CoreGraphics.framework */; };
 		F79954421828D74F009DECED /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7544FD918277BB50042D6CE /* UIKit.framework */; };
@@ -49,11 +49,13 @@
 		F79954581828D74F009DECED /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7544FD918277BB50042D6CE /* UIKit.framework */; };
 		F79954601828D74F009DECED /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F799545E1828D74F009DECED /* InfoPlist.strings */; };
 		F79954621828D74F009DECED /* prive_ios_tor_simulatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F79954611828D74F009DECED /* prive_ios_tor_simulatorTests.m */; };
-		F799546A1828D792009DECED /* PRVSocketDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F754508C1827A21B0042D6CE /* PRVSocketDelegate.m */; };
+		F799546A1828D792009DECED /* PRVGCDSocketDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F754508C1827A21B0042D6CE /* PRVGCDSocketDelegate.m */; };
 		F799546C1828D792009DECED /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F7544FE518277BB50042D6CE /* AppDelegate.m */; };
 		F799546E1828D792009DECED /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7544FEB18277BB50042D6CE /* ViewController.m */; };
 		F799546F1828D79D009DECED /* libprive-ios-tor-dependencies.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F754506718279C1C0042D6CE /* libprive-ios-tor-dependencies.a */; };
 		F79954701828D878009DECED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7544FE718277BB50042D6CE /* Main.storyboard */; };
+		F799547A1829205C009DECED /* PRVAsyncSocketDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F79954791829205C009DECED /* PRVAsyncSocketDelegate.m */; };
+		F799547B1829205C009DECED /* PRVAsyncSocketDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F79954791829205C009DECED /* PRVAsyncSocketDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -120,8 +122,8 @@
 		F754502C18277E160042D6CE /* HIMainHack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HIMainHack.h; sourceTree = "<group>"; };
 		F754502D18277F460042D6CE /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		F754506118279C1B0042D6CE /* prive-ios-tor-dependencies.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "prive-ios-tor-dependencies.xcodeproj"; path = "prive-ios-tor-dependencies/prive-ios-tor-dependencies.xcodeproj"; sourceTree = "<group>"; };
-		F754508B1827A21B0042D6CE /* PRVSocketDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRVSocketDelegate.h; sourceTree = "<group>"; };
-		F754508C1827A21B0042D6CE /* PRVSocketDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRVSocketDelegate.m; sourceTree = "<group>"; };
+		F754508B1827A21B0042D6CE /* PRVGCDSocketDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRVGCDSocketDelegate.h; sourceTree = "<group>"; };
+		F754508C1827A21B0042D6CE /* PRVGCDSocketDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRVGCDSocketDelegate.m; sourceTree = "<group>"; };
 		F799543F1828D74F009DECED /* prive-ios-tor-simulator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "prive-ios-tor-simulator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F79954451828D74F009DECED /* prive-ios-tor-simulator-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "prive-ios-tor-simulator-Info.plist"; sourceTree = "<group>"; };
 		F79954471828D74F009DECED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -132,6 +134,8 @@
 		F799545D1828D74F009DECED /* prive-ios-tor-simulatorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "prive-ios-tor-simulatorTests-Info.plist"; sourceTree = "<group>"; };
 		F799545F1828D74F009DECED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F79954611828D74F009DECED /* prive_ios_tor_simulatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = prive_ios_tor_simulatorTests.m; sourceTree = "<group>"; };
+		F79954781829205C009DECED /* PRVAsyncSocketDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRVAsyncSocketDelegate.h; sourceTree = "<group>"; };
+		F79954791829205C009DECED /* PRVAsyncSocketDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRVAsyncSocketDelegate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -309,8 +313,10 @@
 		F754508A18279CE80042D6CE /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				F754508B1827A21B0042D6CE /* PRVSocketDelegate.h */,
-				F754508C1827A21B0042D6CE /* PRVSocketDelegate.m */,
+				F754508B1827A21B0042D6CE /* PRVGCDSocketDelegate.h */,
+				F754508C1827A21B0042D6CE /* PRVGCDSocketDelegate.m */,
+				F79954781829205C009DECED /* PRVAsyncSocketDelegate.h */,
+				F79954791829205C009DECED /* PRVAsyncSocketDelegate.m */,
 			);
 			name = Networking;
 			sourceTree = "<group>";
@@ -525,9 +531,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F754508D1827A21B0042D6CE /* PRVSocketDelegate.m in Sources */,
+				F754508D1827A21B0042D6CE /* PRVGCDSocketDelegate.m in Sources */,
 				F7544FEC18277BB50042D6CE /* ViewController.m in Sources */,
 				F7544FE618277BB50042D6CE /* AppDelegate.m in Sources */,
+				F799547A1829205C009DECED /* PRVAsyncSocketDelegate.m in Sources */,
 				F754502318277D0C0042D6CE /* HITorManager.m in Sources */,
 				F7544FE218277BB50042D6CE /* main.m in Sources */,
 				F754502818277D3F0042D6CE /* AppDelegate+Tor.m in Sources */,
@@ -546,9 +553,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F799546A1828D792009DECED /* PRVSocketDelegate.m in Sources */,
+				F799546A1828D792009DECED /* PRVGCDSocketDelegate.m in Sources */,
 				F799546C1828D792009DECED /* AppDelegate.m in Sources */,
 				F799546E1828D792009DECED /* ViewController.m in Sources */,
+				F799547B1829205C009DECED /* PRVAsyncSocketDelegate.m in Sources */,
 				F799544A1828D74F009DECED /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -712,7 +720,7 @@
 				);
 				OTHER_LDFLAGS = "-Objc";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/dependencies/submodules/CocoaAsyncSocket/GCD\" \"$(SRCROOT)/dependencies/submodules/AFNetworking/AFNetworking\" \"$(SRCROOT)/dependencies/submodules/AFNetworking/UIKit+AFNetworking\"";
+				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/dependencies/submodules/CocoaAsyncSocket/GCD\" \"$(SRCROOT)/dependencies/submodules/AFNetworking/AFNetworking\" \"$(SRCROOT)/dependencies/submodules/AFNetworking/UIKit+AFNetworking\" \"$(SRCROOT)/dependencies/submodules/CocoaAsyncSocket/RunLoop\"";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -737,7 +745,7 @@
 				);
 				OTHER_LDFLAGS = "-Objc";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/dependencies/submodules/CocoaAsyncSocket/GCD\" \"$(SRCROOT)/dependencies/submodules/AFNetworking/AFNetworking\" \"$(SRCROOT)/dependencies/submodules/AFNetworking/UIKit+AFNetworking\"";
+				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/dependencies/submodules/CocoaAsyncSocket/GCD\" \"$(SRCROOT)/dependencies/submodules/AFNetworking/AFNetworking\" \"$(SRCROOT)/dependencies/submodules/AFNetworking/UIKit+AFNetworking\" \"$(SRCROOT)/dependencies/submodules/CocoaAsyncSocket/RunLoop\"";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -798,7 +806,7 @@
 				);
 				INFOPLIST_FILE = "prive-ios-tor-simulator/prive-ios-tor-simulator-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/dependencies/submodules/AFNetworking/AFNetworking\" \"$(SRCROOT)/dependencies/submodules/AFNetworking/UIKit+AFNetworking\" \"$(SRCROOT)/dependencies/submodules/CocoaAsyncSocket/Vendor/CocoaLumberjack\"/** \"$(SRCROOT)/dependencies/submodules/CocoaAsyncSocket/GCD\"";
+				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/dependencies/submodules/AFNetworking/AFNetworking\" \"$(SRCROOT)/dependencies/submodules/AFNetworking/UIKit+AFNetworking\" \"$(SRCROOT)/dependencies/submodules/CocoaAsyncSocket/GCD\" \"$(SRCROOT)/dependencies/submodules/CocoaAsyncSocket/RunLoop\"";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -813,7 +821,7 @@
 				GCC_PREFIX_HEADER = "prive-ios-tor-simulator/prive-ios-tor-simulator-Prefix.pch";
 				INFOPLIST_FILE = "prive-ios-tor-simulator/prive-ios-tor-simulator-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/dependencies/submodules/AFNetworking/AFNetworking\" \"$(SRCROOT)/dependencies/submodules/AFNetworking/UIKit+AFNetworking\" \"$(SRCROOT)/dependencies/submodules/CocoaAsyncSocket/Vendor/CocoaLumberjack\"/** \"$(SRCROOT)/dependencies/submodules/CocoaAsyncSocket/GCD\"";
+				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/dependencies/submodules/AFNetworking/AFNetworking\" \"$(SRCROOT)/dependencies/submodules/AFNetworking/UIKit+AFNetworking\" \"$(SRCROOT)/dependencies/submodules/CocoaAsyncSocket/GCD\" \"$(SRCROOT)/dependencies/submodules/CocoaAsyncSocket/RunLoop\"";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

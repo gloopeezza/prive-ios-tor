@@ -6,9 +6,9 @@
 //  Copyright (c) 2013 Prive. All rights reserved.
 //
 
-#import "PRVSocketDelegate.h"
+#import "PRVGCDSocketDelegate.h"
 
-@implementation PRVSocketDelegate
+@implementation PRVGCDSocketDelegate
 
 - (void)socket:(GCDAsyncSocket *)sock didAcceptNewSocket:(GCDAsyncSocket *)newSocket {
     NSLog(@"Connection accepted sending echo %@", newSocket);

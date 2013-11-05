@@ -34,7 +34,7 @@
     AFHTTPResponseSerializer *serializer = [AFHTTPResponseSerializer serializer];
     serializer.acceptableContentTypes = [NSSet setWithObject:@"text/html"];
     
-    NSURL *baseURL = [NSURL URLWithString:@"http://afnjyo25ohyp3v5g.onion"];
+    NSURL *baseURL = [NSURL URLWithString:@"https://afnjyo25ohyp3v5g.onion"];
     _manager = [[AFHTTPSessionManager alloc] initWithBaseURL:baseURL sessionConfiguration:configuration];
     _manager.responseSerializer = serializer;
 }

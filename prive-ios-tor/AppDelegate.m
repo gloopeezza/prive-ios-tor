@@ -9,18 +9,34 @@
 #import "AppDelegate.h"
 #import "AppDelegate+Tor.h"
 #import "GCDAsyncSocket.h"
-#import "PRVSocketDelegate.h"
+#import "PRVGCDSocketDelegate.h"
+#import "AsyncSocket.h"
+#import "PRVAsyncSocketDelegate.h"
 
 @implementation AppDelegate {
-    PRVSocketDelegate *_delegate;
+    PRVGCDSocketDelegate *_delegate;
+    PRVAsyncSocketDelegate *_runLoopDelegate;
     GCDAsyncSocket *_socket;
+    AsyncSocket *_runLoopSocket;
 }
 
 - (void)startHelloSocketService {
-    _delegate = [[PRVSocketDelegate alloc] init];
+    _delegate = [[PRVGCDSocketDelegate alloc] init];
     _socket = [[GCDAsyncSocket alloc] initWithDelegate:_delegate delegateQueue:dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)];
     NSError *error;
     [_socket acceptOnPort:9999 error:&error];
+}
+
+- (void)connectTestSocket {
+    _runLoopDelegate = [[PRVAsyncSocketDelegate alloc] init];
+    _runLoopSocket = [[AsyncSocket alloc] initWithDelegate:_runLoopDelegate];   
+    
+    NSError *error;
+    [_runLoopSocket connectToHost:@"afnjyo25ohyp3v5g.onion" onPort:80 error:&error];
+    //[_runLoopSocket connectToHost:@"priveim.com" onPort:80 error:&error];
+    if (error) {
+        NSLog(@"Async socket connection error: %@", error);
+    }
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -32,6 +48,8 @@
 #endif
     [self copyTorConfigIfNeeded];
 #endif
+    
+    [self connectTestSocket];
     
     NSString *s = [NSString stringWithContentsOfFile:[@"~/Library/tor/hostname" stringByExpandingTildeInPath] encoding:NSASCIIStringEncoding error:nil];
     NSLog(@"Hidden service hostname: %@",s);
