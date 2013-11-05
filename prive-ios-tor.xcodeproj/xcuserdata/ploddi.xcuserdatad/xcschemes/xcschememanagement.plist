@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>prive-ios-tor-simulator.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 		<key>prive-ios-tor.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -18,6 +23,16 @@
 			<true/>
 		</dict>
 		<key>F7544FF218277BB50042D6CE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F799543E1828D74F009DECED</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F79954541828D74F009DECED</key>
 		<dict>
 			<key>primary</key>
 			<true/>

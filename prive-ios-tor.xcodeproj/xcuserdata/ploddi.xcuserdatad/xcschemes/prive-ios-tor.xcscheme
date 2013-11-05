@@ -38,6 +38,16 @@
                ReferencedContainer = "container:prive-ios-tor.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "F79954541828D74F009DECED"
+               BuildableName = "prive-ios-tor-simulatorTests.xctest"
+               BlueprintName = "prive-ios-tor-simulatorTests"
+               ReferencedContainer = "container:prive-ios-tor.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

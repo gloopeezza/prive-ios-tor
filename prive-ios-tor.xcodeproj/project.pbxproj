@@ -38,6 +38,22 @@
 		F754502E18277F460042D6CE /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F754502D18277F460042D6CE /* libz.dylib */; };
 		F754508918279CA10042D6CE /* libprive-ios-tor-dependencies.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F754506718279C1C0042D6CE /* libprive-ios-tor-dependencies.a */; };
 		F754508D1827A21B0042D6CE /* PRVSocketDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F754508C1827A21B0042D6CE /* PRVSocketDelegate.m */; };
+		F79954401828D74F009DECED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7544FD518277BB50042D6CE /* Foundation.framework */; };
+		F79954411828D74F009DECED /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7544FD718277BB50042D6CE /* CoreGraphics.framework */; };
+		F79954421828D74F009DECED /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7544FD918277BB50042D6CE /* UIKit.framework */; };
+		F79954481828D74F009DECED /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F79954461828D74F009DECED /* InfoPlist.strings */; };
+		F799544A1828D74F009DECED /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F79954491828D74F009DECED /* main.m */; };
+		F79954501828D74F009DECED /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F799544F1828D74F009DECED /* Images.xcassets */; };
+		F79954561828D74F009DECED /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7544FF418277BB50042D6CE /* XCTest.framework */; };
+		F79954571828D74F009DECED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7544FD518277BB50042D6CE /* Foundation.framework */; };
+		F79954581828D74F009DECED /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7544FD918277BB50042D6CE /* UIKit.framework */; };
+		F79954601828D74F009DECED /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F799545E1828D74F009DECED /* InfoPlist.strings */; };
+		F79954621828D74F009DECED /* prive_ios_tor_simulatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F79954611828D74F009DECED /* prive_ios_tor_simulatorTests.m */; };
+		F799546A1828D792009DECED /* PRVSocketDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F754508C1827A21B0042D6CE /* PRVSocketDelegate.m */; };
+		F799546C1828D792009DECED /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F7544FE518277BB50042D6CE /* AppDelegate.m */; };
+		F799546E1828D792009DECED /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7544FEB18277BB50042D6CE /* ViewController.m */; };
+		F799546F1828D79D009DECED /* libprive-ios-tor-dependencies.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F754506718279C1C0042D6CE /* libprive-ios-tor-dependencies.a */; };
+		F79954701828D878009DECED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7544FE718277BB50042D6CE /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +70,13 @@
 			proxyType = 2;
 			remoteGlobalIDString = F754503818279C1B0042D6CE;
 			remoteInfo = "prive-ios-tor-dependencies";
+		};
+		F79954591828D74F009DECED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F7544FCA18277BB50042D6CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F799543E1828D74F009DECED;
+			remoteInfo = "prive-ios-tor-simulator";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -99,6 +122,16 @@
 		F754506118279C1B0042D6CE /* prive-ios-tor-dependencies.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "prive-ios-tor-dependencies.xcodeproj"; path = "prive-ios-tor-dependencies/prive-ios-tor-dependencies.xcodeproj"; sourceTree = "<group>"; };
 		F754508B1827A21B0042D6CE /* PRVSocketDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRVSocketDelegate.h; sourceTree = "<group>"; };
 		F754508C1827A21B0042D6CE /* PRVSocketDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRVSocketDelegate.m; sourceTree = "<group>"; };
+		F799543F1828D74F009DECED /* prive-ios-tor-simulator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "prive-ios-tor-simulator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F79954451828D74F009DECED /* prive-ios-tor-simulator-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "prive-ios-tor-simulator-Info.plist"; sourceTree = "<group>"; };
+		F79954471828D74F009DECED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F79954491828D74F009DECED /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F799544B1828D74F009DECED /* prive-ios-tor-simulator-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "prive-ios-tor-simulator-Prefix.pch"; sourceTree = "<group>"; };
+		F799544F1828D74F009DECED /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F79954551828D74F009DECED /* prive-ios-tor-simulatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "prive-ios-tor-simulatorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F799545D1828D74F009DECED /* prive-ios-tor-simulatorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "prive-ios-tor-simulatorTests-Info.plist"; sourceTree = "<group>"; };
+		F799545F1828D74F009DECED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F79954611828D74F009DECED /* prive_ios_tor_simulatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = prive_ios_tor_simulatorTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +168,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F799543C1828D74F009DECED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F799546F1828D79D009DECED /* libprive-ios-tor-dependencies.a in Frameworks */,
+				F79954411828D74F009DECED /* CoreGraphics.framework in Frameworks */,
+				F79954421828D74F009DECED /* UIKit.framework in Frameworks */,
+				F79954401828D74F009DECED /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F79954521828D74F009DECED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F79954561828D74F009DECED /* XCTest.framework in Frameworks */,
+				F79954581828D74F009DECED /* UIKit.framework in Frameworks */,
+				F79954571828D74F009DECED /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -143,6 +197,8 @@
 			children = (
 				F7544FDB18277BB50042D6CE /* prive-ios-tor */,
 				F7544FFA18277BB50042D6CE /* prive-ios-torTests */,
+				F79954431828D74F009DECED /* prive-ios-tor-simulator */,
+				F799545B1828D74F009DECED /* prive-ios-tor-simulatorTests */,
 				F7544FD418277BB50042D6CE /* Frameworks */,
 				F7544FD318277BB50042D6CE /* Products */,
 			);
@@ -153,6 +209,8 @@
 			children = (
 				F7544FD218277BB50042D6CE /* prive-ios-tor.app */,
 				F7544FF318277BB50042D6CE /* prive-ios-torTests.xctest */,
+				F799543F1828D74F009DECED /* prive-ios-tor-simulator.app */,
+				F79954551828D74F009DECED /* prive-ios-tor-simulatorTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -257,6 +315,44 @@
 			name = Networking;
 			sourceTree = "<group>";
 		};
+		F79954431828D74F009DECED /* prive-ios-tor-simulator */ = {
+			isa = PBXGroup;
+			children = (
+				F799544F1828D74F009DECED /* Images.xcassets */,
+				F79954441828D74F009DECED /* Supporting Files */,
+			);
+			path = "prive-ios-tor-simulator";
+			sourceTree = "<group>";
+		};
+		F79954441828D74F009DECED /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F79954451828D74F009DECED /* prive-ios-tor-simulator-Info.plist */,
+				F79954461828D74F009DECED /* InfoPlist.strings */,
+				F79954491828D74F009DECED /* main.m */,
+				F799544B1828D74F009DECED /* prive-ios-tor-simulator-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F799545B1828D74F009DECED /* prive-ios-tor-simulatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				F79954611828D74F009DECED /* prive_ios_tor_simulatorTests.m */,
+				F799545C1828D74F009DECED /* Supporting Files */,
+			);
+			path = "prive-ios-tor-simulatorTests";
+			sourceTree = "<group>";
+		};
+		F799545C1828D74F009DECED /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F799545D1828D74F009DECED /* prive-ios-tor-simulatorTests-Info.plist */,
+				F799545E1828D74F009DECED /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -295,6 +391,41 @@
 			productReference = F7544FF318277BB50042D6CE /* prive-ios-torTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		F799543E1828D74F009DECED /* prive-ios-tor-simulator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F79954631828D74F009DECED /* Build configuration list for PBXNativeTarget "prive-ios-tor-simulator" */;
+			buildPhases = (
+				F799543B1828D74F009DECED /* Sources */,
+				F799543C1828D74F009DECED /* Frameworks */,
+				F799543D1828D74F009DECED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "prive-ios-tor-simulator";
+			productName = "prive-ios-tor-simulator";
+			productReference = F799543F1828D74F009DECED /* prive-ios-tor-simulator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F79954541828D74F009DECED /* prive-ios-tor-simulatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F79954661828D74F009DECED /* Build configuration list for PBXNativeTarget "prive-ios-tor-simulatorTests" */;
+			buildPhases = (
+				F79954511828D74F009DECED /* Sources */,
+				F79954521828D74F009DECED /* Frameworks */,
+				F79954531828D74F009DECED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F799545A1828D74F009DECED /* PBXTargetDependency */,
+			);
+			name = "prive-ios-tor-simulatorTests";
+			productName = "prive-ios-tor-simulatorTests";
+			productReference = F79954551828D74F009DECED /* prive-ios-tor-simulatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -305,6 +436,9 @@
 				ORGANIZATIONNAME = Prive;
 				TargetAttributes = {
 					F7544FF218277BB50042D6CE = {
+						TestTargetID = F7544FD118277BB50042D6CE;
+					};
+					F79954541828D74F009DECED = {
 						TestTargetID = F7544FD118277BB50042D6CE;
 					};
 				};
@@ -330,6 +464,8 @@
 			targets = (
 				F7544FD118277BB50042D6CE /* prive-ios-tor */,
 				F7544FF218277BB50042D6CE /* prive-ios-torTests */,
+				F799543E1828D74F009DECED /* prive-ios-tor-simulator */,
+				F79954541828D74F009DECED /* prive-ios-tor-simulatorTests */,
 			);
 		};
 /* End PBXProject section */
@@ -364,6 +500,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F799543D1828D74F009DECED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F79954481828D74F009DECED /* InfoPlist.strings in Resources */,
+				F79954501828D74F009DECED /* Images.xcassets in Resources */,
+				F79954701828D878009DECED /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F79954531828D74F009DECED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F79954601828D74F009DECED /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -388,6 +542,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F799543B1828D74F009DECED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F799546A1828D792009DECED /* PRVSocketDelegate.m in Sources */,
+				F799546C1828D792009DECED /* AppDelegate.m in Sources */,
+				F799546E1828D792009DECED /* ViewController.m in Sources */,
+				F799544A1828D74F009DECED /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F79954511828D74F009DECED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F79954621828D74F009DECED /* prive_ios_tor_simulatorTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -395,6 +568,11 @@
 			isa = PBXTargetDependency;
 			target = F7544FD118277BB50042D6CE /* prive-ios-tor */;
 			targetProxy = F7544FF818277BB50042D6CE /* PBXContainerItemProxy */;
+		};
+		F799545A1828D74F009DECED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F799543E1828D74F009DECED /* prive-ios-tor-simulator */;
+			targetProxy = F79954591828D74F009DECED /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -419,6 +597,22 @@
 			isa = PBXVariantGroup;
 			children = (
 				F7544FFE18277BB50042D6CE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F79954461828D74F009DECED /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F79954471828D74F009DECED /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F799545E1828D74F009DECED /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F799545F1828D74F009DECED /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -518,7 +712,7 @@
 				);
 				OTHER_LDFLAGS = "-Objc";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/dependencies/submodules/CocoaAsyncSocket/GCD\"";
+				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/dependencies/submodules/CocoaAsyncSocket/GCD\" \"$(SRCROOT)/dependencies/submodules/AFNetworking/AFNetworking\" \"$(SRCROOT)/dependencies/submodules/AFNetworking/UIKit+AFNetworking\"";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -543,7 +737,7 @@
 				);
 				OTHER_LDFLAGS = "-Objc";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/dependencies/submodules/CocoaAsyncSocket/GCD\"";
+				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/dependencies/submodules/CocoaAsyncSocket/GCD\" \"$(SRCROOT)/dependencies/submodules/AFNetworking/AFNetworking\" \"$(SRCROOT)/dependencies/submodules/AFNetworking/UIKit+AFNetworking\"";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -590,6 +784,82 @@
 			};
 			name = Release;
 		};
+		F79954641828D74F009DECED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "prive-ios-tor-simulator/prive-ios-tor-simulator-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "prive-ios-tor-simulator/prive-ios-tor-simulator-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/dependencies/submodules/AFNetworking/AFNetworking\" \"$(SRCROOT)/dependencies/submodules/AFNetworking/UIKit+AFNetworking\" \"$(SRCROOT)/dependencies/submodules/CocoaAsyncSocket/Vendor/CocoaLumberjack\"/** \"$(SRCROOT)/dependencies/submodules/CocoaAsyncSocket/GCD\"";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F79954651828D74F009DECED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "prive-ios-tor-simulator/prive-ios-tor-simulator-Prefix.pch";
+				INFOPLIST_FILE = "prive-ios-tor-simulator/prive-ios-tor-simulator-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/dependencies/submodules/AFNetworking/AFNetworking\" \"$(SRCROOT)/dependencies/submodules/AFNetworking/UIKit+AFNetworking\" \"$(SRCROOT)/dependencies/submodules/CocoaAsyncSocket/Vendor/CocoaLumberjack\"/** \"$(SRCROOT)/dependencies/submodules/CocoaAsyncSocket/GCD\"";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		F79954671828D74F009DECED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/prive-ios-tor.app/prive-ios-tor";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "prive-ios-tor-simulator/prive-ios-tor-simulator-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "prive-ios-tor-simulatorTests/prive-ios-tor-simulatorTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		F79954681828D74F009DECED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/prive-ios-tor.app/prive-ios-tor";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "prive-ios-tor-simulator/prive-ios-tor-simulator-Prefix.pch";
+				INFOPLIST_FILE = "prive-ios-tor-simulatorTests/prive-ios-tor-simulatorTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -609,12 +879,30 @@
 				F754500618277BB50042D6CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F754500718277BB50042D6CE /* Build configuration list for PBXNativeTarget "prive-ios-torTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F754500818277BB50042D6CE /* Debug */,
 				F754500918277BB50042D6CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F79954631828D74F009DECED /* Build configuration list for PBXNativeTarget "prive-ios-tor-simulator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F79954641828D74F009DECED /* Debug */,
+				F79954651828D74F009DECED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F79954661828D74F009DECED /* Build configuration list for PBXNativeTarget "prive-ios-tor-simulatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F79954671828D74F009DECED /* Debug */,
+				F79954681828D74F009DECED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

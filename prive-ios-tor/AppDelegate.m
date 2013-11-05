@@ -11,7 +11,6 @@
 #import "GCDAsyncSocket.h"
 #import "PRVSocketDelegate.h"
 
-
 @implementation AppDelegate {
     PRVSocketDelegate *_delegate;
     GCDAsyncSocket *_socket;
@@ -26,13 +25,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+#if !(TARGET_IPHONE_SIMULATOR)
     [self startHelloSocketService];
-    
 #ifdef DEBUG
     [self clearConfigFile];
 #endif
-    
     [self copyTorConfigIfNeeded];
+#endif
     
     NSString *s = [NSString stringWithContentsOfFile:[@"~/Library/tor/hostname" stringByExpandingTildeInPath] encoding:NSASCIIStringEncoding error:nil];
     NSLog(@"Hidden service hostname: %@",s);
