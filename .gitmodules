@@ -6,4 +6,4 @@
 	url = https://github.com/AFNetworking/AFNetworking.git
 [submodule "dependencies/submodules/TorchatMac"]
 	path = dependencies/submodules/TorchatMac
-	url = https://github.com/javerous/torchat-mac.git
+	url = ssh://git@bitbucket.org/ploddi/torchatmac.git
