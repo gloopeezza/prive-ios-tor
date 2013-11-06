@@ -56,6 +56,10 @@
 		F79954701828D878009DECED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7544FE718277BB50042D6CE /* Main.storyboard */; };
 		F799547A1829205C009DECED /* PRVAsyncSocketDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F79954791829205C009DECED /* PRVAsyncSocketDelegate.m */; };
 		F799547B1829205C009DECED /* PRVAsyncSocketDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F79954791829205C009DECED /* PRVAsyncSocketDelegate.m */; };
+		F7A91BC2182A205D00073051 /* PRVTorchatConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A91BC1182A205D00073051 /* PRVTorchatConfig.m */; };
+		F7A91BC3182A205D00073051 /* PRVTorchatConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A91BC1182A205D00073051 /* PRVTorchatConfig.m */; };
+		F7A91BC5182A27D400073051 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F7A91BC4182A27D400073051 /* Localizable.strings */; };
+		F7A91BC6182A27D400073051 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F7A91BC4182A27D400073051 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -136,6 +140,9 @@
 		F79954611828D74F009DECED /* prive_ios_tor_simulatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = prive_ios_tor_simulatorTests.m; sourceTree = "<group>"; };
 		F79954781829205C009DECED /* PRVAsyncSocketDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRVAsyncSocketDelegate.h; sourceTree = "<group>"; };
 		F79954791829205C009DECED /* PRVAsyncSocketDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRVAsyncSocketDelegate.m; sourceTree = "<group>"; };
+		F7A91BC0182A205D00073051 /* PRVTorchatConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRVTorchatConfig.h; sourceTree = "<group>"; };
+		F7A91BC1182A205D00073051 /* PRVTorchatConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRVTorchatConfig.m; sourceTree = "<group>"; };
+		F7A91BC4182A27D400073051 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -246,6 +253,7 @@
 		F7544FDB18277BB50042D6CE /* prive-ios-tor */ = {
 			isa = PBXGroup;
 			children = (
+				F7A91BBF182A1F6700073051 /* Torchat */,
 				F754508A18279CE80042D6CE /* Networking */,
 				F754502018277D050042D6CE /* Tor */,
 				F7544FE418277BB50042D6CE /* AppDelegate.h */,
@@ -266,6 +274,7 @@
 				F7544FDE18277BB50042D6CE /* InfoPlist.strings */,
 				F7544FE118277BB50042D6CE /* main.m */,
 				F7544FE318277BB50042D6CE /* prive-ios-tor-Prefix.pch */,
+				F7A91BC4182A27D400073051 /* Localizable.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -357,6 +366,15 @@
 				F799545E1828D74F009DECED /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F7A91BBF182A1F6700073051 /* Torchat */ = {
+			isa = PBXGroup;
+			children = (
+				F7A91BC0182A205D00073051 /* PRVTorchatConfig.h */,
+				F7A91BC1182A205D00073051 /* PRVTorchatConfig.m */,
+			);
+			name = Torchat;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -491,6 +509,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7A91BC5182A27D400073051 /* Localizable.strings in Resources */,
 				F7544FEE18277BB50042D6CE /* Images.xcassets in Resources */,
 				F7544FE018277BB50042D6CE /* InfoPlist.strings in Resources */,
 				F754502518277D140042D6CE /* torrc in Resources */,
@@ -511,6 +530,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F79954481828D74F009DECED /* InfoPlist.strings in Resources */,
+				F7A91BC6182A27D400073051 /* Localizable.strings in Resources */,
 				F79954501828D74F009DECED /* Images.xcassets in Resources */,
 				F79954701828D878009DECED /* Main.storyboard in Resources */,
 			);
@@ -531,6 +551,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7A91BC2182A205D00073051 /* PRVTorchatConfig.m in Sources */,
 				F754508D1827A21B0042D6CE /* PRVGCDSocketDelegate.m in Sources */,
 				F7544FEC18277BB50042D6CE /* ViewController.m in Sources */,
 				F7544FE618277BB50042D6CE /* AppDelegate.m in Sources */,
@@ -557,6 +578,7 @@
 				F799546C1828D792009DECED /* AppDelegate.m in Sources */,
 				F799546E1828D792009DECED /* ViewController.m in Sources */,
 				F799547B1829205C009DECED /* PRVAsyncSocketDelegate.m in Sources */,
+				F7A91BC3182A205D00073051 /* PRVTorchatConfig.m in Sources */,
 				F799544A1828D74F009DECED /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -712,13 +734,14 @@
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"\"$(SRCROOT)/dependencies/include\"/**",
+					"\"$(SRCROOT)/dependencies/submodules/TorchatMac/TorChat/Sources/Core\"",
 				);
 				INFOPLIST_FILE = "prive-ios-tor/prive-ios-tor-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/ploddi/Projects/prive-ios-tor/dependencies/lib",
 				);
-				OTHER_LDFLAGS = "-Objc";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/dependencies/submodules/CocoaAsyncSocket/GCD\" \"$(SRCROOT)/dependencies/submodules/AFNetworking/AFNetworking\" \"$(SRCROOT)/dependencies/submodules/AFNetworking/UIKit+AFNetworking\" \"$(SRCROOT)/dependencies/submodules/CocoaAsyncSocket/RunLoop\"";
 				WRAPPER_EXTENSION = app;
@@ -737,13 +760,14 @@
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"\"$(SRCROOT)/dependencies/include\"/**",
+					"\"$(SRCROOT)/dependencies/submodules/TorchatMac/TorChat/Sources/Core\"",
 				);
 				INFOPLIST_FILE = "prive-ios-tor/prive-ios-tor-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/ploddi/Projects/prive-ios-tor/dependencies/lib",
 				);
-				OTHER_LDFLAGS = "-Objc";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/dependencies/submodules/CocoaAsyncSocket/GCD\" \"$(SRCROOT)/dependencies/submodules/AFNetworking/AFNetworking\" \"$(SRCROOT)/dependencies/submodules/AFNetworking/UIKit+AFNetworking\" \"$(SRCROOT)/dependencies/submodules/CocoaAsyncSocket/RunLoop\"";
 				WRAPPER_EXTENSION = app;
@@ -805,8 +829,9 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "prive-ios-tor-simulator/prive-ios-tor-simulator-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/dependencies/submodules/AFNetworking/AFNetworking\" \"$(SRCROOT)/dependencies/submodules/AFNetworking/UIKit+AFNetworking\" \"$(SRCROOT)/dependencies/submodules/CocoaAsyncSocket/GCD\" \"$(SRCROOT)/dependencies/submodules/CocoaAsyncSocket/RunLoop\"";
+				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/dependencies/submodules/AFNetworking/AFNetworking\" \"$(SRCROOT)/dependencies/submodules/AFNetworking/UIKit+AFNetworking\" \"$(SRCROOT)/dependencies/submodules/CocoaAsyncSocket/GCD\" \"$(SRCROOT)/dependencies/submodules/CocoaAsyncSocket/RunLoop\" \"$(SRCROOT)/dependencies/submodules/TorchatMac/TorChat/Sources/Core\"";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -820,8 +845,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "prive-ios-tor-simulator/prive-ios-tor-simulator-Prefix.pch";
 				INFOPLIST_FILE = "prive-ios-tor-simulator/prive-ios-tor-simulator-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/dependencies/submodules/AFNetworking/AFNetworking\" \"$(SRCROOT)/dependencies/submodules/AFNetworking/UIKit+AFNetworking\" \"$(SRCROOT)/dependencies/submodules/CocoaAsyncSocket/GCD\" \"$(SRCROOT)/dependencies/submodules/CocoaAsyncSocket/RunLoop\"";
+				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/dependencies/submodules/AFNetworking/AFNetworking\" \"$(SRCROOT)/dependencies/submodules/AFNetworking/UIKit+AFNetworking\" \"$(SRCROOT)/dependencies/submodules/CocoaAsyncSocket/GCD\" \"$(SRCROOT)/dependencies/submodules/CocoaAsyncSocket/RunLoop\" \"$(SRCROOT)/dependencies/submodules/TorchatMac/TorChat/Sources/Core\"";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -905,6 +931,7 @@
 				F79954651828D74F009DECED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F79954661828D74F009DECED /* Build configuration list for PBXNativeTarget "prive-ios-tor-simulatorTests" */ = {
 			isa = XCConfigurationList;
@@ -913,6 +940,7 @@
 				F79954681828D74F009DECED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

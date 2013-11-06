@@ -39,6 +39,11 @@
     }
 }
 
+- (void)startManager {
+
+}
+
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
 #if !(TARGET_IPHONE_SIMULATOR)
@@ -49,7 +54,9 @@
     [self copyTorConfigIfNeeded];
 #endif
     
-    [self connectTestSocket];
+    //[self connectTestSocket];
+    
+    //
     
     NSString *s = [NSString stringWithContentsOfFile:[@"~/Library/tor/hostname" stringByExpandingTildeInPath] encoding:NSASCIIStringEncoding error:nil];
     NSLog(@"Hidden service hostname: %@",s);

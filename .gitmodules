@@ -4,3 +4,6 @@
 [submodule "dependencies/submodules/AFNetworking"]
 	path = dependencies/submodules/AFNetworking
 	url = https://github.com/AFNetworking/AFNetworking.git
+[submodule "dependencies/submodules/TorchatMac"]
+	path = dependencies/submodules/TorchatMac
+	url = https://github.com/javerous/torchat-mac.git

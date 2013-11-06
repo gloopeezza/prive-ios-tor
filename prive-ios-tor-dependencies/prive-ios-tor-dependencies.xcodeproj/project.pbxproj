@@ -33,6 +33,19 @@
 		F79954391828D2DF009DECED /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = F799542F1828D2DF009DECED /* AFURLResponseSerialization.m */; };
 		F799543A1828D2DF009DECED /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F79954311828D2DF009DECED /* AFURLSessionManager.m */; };
 		F799547618291BA8009DECED /* AsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = F799547318291BA8009DECED /* AsyncSocket.m */; };
+		F7A91BAF182A14EF00073051 /* NSArray+TCTools.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A91B94182A14EF00073051 /* NSArray+TCTools.m */; };
+		F7A91BB0182A14EF00073051 /* NSData+TCTools.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A91B96182A14EF00073051 /* NSData+TCTools.m */; };
+		F7A91BB1182A14EF00073051 /* TCBuddy.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A91B98182A14EF00073051 /* TCBuddy.m */; };
+		F7A91BB2182A14EF00073051 /* TCBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A91B9A182A14EF00073051 /* TCBuffer.m */; };
+		F7A91BB3182A14EF00073051 /* TCConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A91B9D182A14EF00073051 /* TCConnection.m */; };
+		F7A91BB4182A14EF00073051 /* TCCoreManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A91BA0182A14EF00073051 /* TCCoreManager.m */; };
+		F7A91BB5182A14EF00073051 /* TCFileReceive.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A91BA2182A14EF00073051 /* TCFileReceive.m */; };
+		F7A91BB6182A14EF00073051 /* TCFileSend.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A91BA4182A14EF00073051 /* TCFileSend.m */; };
+		F7A91BB7182A14EF00073051 /* TCImage.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A91BA6182A14EF00073051 /* TCImage.m */; };
+		F7A91BB8182A14EF00073051 /* TCInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A91BA8182A14EF00073051 /* TCInfo.m */; };
+		F7A91BB9182A14EF00073051 /* TCParser.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A91BAA182A14EF00073051 /* TCParser.m */; };
+		F7A91BBA182A14EF00073051 /* TCSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A91BAC182A14EF00073051 /* TCSocket.m */; };
+		F7A91BBB182A14EF00073051 /* TCTools.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A91BAE182A14EF00073051 /* TCTools.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -106,6 +119,34 @@
 		F79954311828D2DF009DECED /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
 		F799547218291BA8009DECED /* AsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AsyncSocket.h; path = ../../dependencies/submodules/CocoaAsyncSocket/RunLoop/AsyncSocket.h; sourceTree = "<group>"; };
 		F799547318291BA8009DECED /* AsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AsyncSocket.m; path = ../../dependencies/submodules/CocoaAsyncSocket/RunLoop/AsyncSocket.m; sourceTree = "<group>"; };
+		F7A91B93182A14EF00073051 /* NSArray+TCTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+TCTools.h"; sourceTree = "<group>"; };
+		F7A91B94182A14EF00073051 /* NSArray+TCTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+TCTools.m"; sourceTree = "<group>"; };
+		F7A91B95182A14EF00073051 /* NSData+TCTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+TCTools.h"; sourceTree = "<group>"; };
+		F7A91B96182A14EF00073051 /* NSData+TCTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+TCTools.m"; sourceTree = "<group>"; };
+		F7A91B97182A14EF00073051 /* TCBuddy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCBuddy.h; sourceTree = "<group>"; };
+		F7A91B98182A14EF00073051 /* TCBuddy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCBuddy.m; sourceTree = "<group>"; };
+		F7A91B99182A14EF00073051 /* TCBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCBuffer.h; sourceTree = "<group>"; };
+		F7A91B9A182A14EF00073051 /* TCBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCBuffer.m; sourceTree = "<group>"; };
+		F7A91B9B182A14EF00073051 /* TCConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCConfig.h; sourceTree = "<group>"; };
+		F7A91B9C182A14EF00073051 /* TCConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCConnection.h; sourceTree = "<group>"; };
+		F7A91B9D182A14EF00073051 /* TCConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCConnection.m; sourceTree = "<group>"; };
+		F7A91B9E182A14EF00073051 /* TCConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCConstants.h; sourceTree = "<group>"; };
+		F7A91B9F182A14EF00073051 /* TCCoreManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCCoreManager.h; sourceTree = "<group>"; };
+		F7A91BA0182A14EF00073051 /* TCCoreManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCCoreManager.m; sourceTree = "<group>"; };
+		F7A91BA1182A14EF00073051 /* TCFileReceive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCFileReceive.h; sourceTree = "<group>"; };
+		F7A91BA2182A14EF00073051 /* TCFileReceive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCFileReceive.m; sourceTree = "<group>"; };
+		F7A91BA3182A14EF00073051 /* TCFileSend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCFileSend.h; sourceTree = "<group>"; };
+		F7A91BA4182A14EF00073051 /* TCFileSend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCFileSend.m; sourceTree = "<group>"; };
+		F7A91BA5182A14EF00073051 /* TCImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCImage.h; sourceTree = "<group>"; };
+		F7A91BA6182A14EF00073051 /* TCImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCImage.m; sourceTree = "<group>"; };
+		F7A91BA7182A14EF00073051 /* TCInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCInfo.h; sourceTree = "<group>"; };
+		F7A91BA8182A14EF00073051 /* TCInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCInfo.m; sourceTree = "<group>"; };
+		F7A91BA9182A14EF00073051 /* TCParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCParser.h; sourceTree = "<group>"; };
+		F7A91BAA182A14EF00073051 /* TCParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCParser.m; sourceTree = "<group>"; };
+		F7A91BAB182A14EF00073051 /* TCSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCSocket.h; sourceTree = "<group>"; };
+		F7A91BAC182A14EF00073051 /* TCSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCSocket.m; sourceTree = "<group>"; };
+		F7A91BAD182A14EF00073051 /* TCTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCTools.h; sourceTree = "<group>"; };
+		F7A91BAE182A14EF00073051 /* TCTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCTools.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +191,7 @@
 		F754503D18279C1B0042D6CE /* prive-ios-tor-dependencies */ = {
 			isa = PBXGroup;
 			children = (
+				F7A91B91182A14D300073051 /* TorchatMac */,
 				F799547118291B98009DECED /* RoonLoopSocket */,
 				F79954061828D2B0009DECED /* AFNetworking */,
 				F754506B18279C720042D6CE /* CocoaLumberJack */,
@@ -275,6 +317,50 @@
 			name = RoonLoopSocket;
 			sourceTree = "<group>";
 		};
+		F7A91B91182A14D300073051 /* TorchatMac */ = {
+			isa = PBXGroup;
+			children = (
+				F7A91B92182A14EF00073051 /* Core */,
+			);
+			name = TorchatMac;
+			sourceTree = "<group>";
+		};
+		F7A91B92182A14EF00073051 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				F7A91B93182A14EF00073051 /* NSArray+TCTools.h */,
+				F7A91B94182A14EF00073051 /* NSArray+TCTools.m */,
+				F7A91B95182A14EF00073051 /* NSData+TCTools.h */,
+				F7A91B96182A14EF00073051 /* NSData+TCTools.m */,
+				F7A91B97182A14EF00073051 /* TCBuddy.h */,
+				F7A91B98182A14EF00073051 /* TCBuddy.m */,
+				F7A91B99182A14EF00073051 /* TCBuffer.h */,
+				F7A91B9A182A14EF00073051 /* TCBuffer.m */,
+				F7A91B9B182A14EF00073051 /* TCConfig.h */,
+				F7A91B9C182A14EF00073051 /* TCConnection.h */,
+				F7A91B9D182A14EF00073051 /* TCConnection.m */,
+				F7A91B9E182A14EF00073051 /* TCConstants.h */,
+				F7A91B9F182A14EF00073051 /* TCCoreManager.h */,
+				F7A91BA0182A14EF00073051 /* TCCoreManager.m */,
+				F7A91BA1182A14EF00073051 /* TCFileReceive.h */,
+				F7A91BA2182A14EF00073051 /* TCFileReceive.m */,
+				F7A91BA3182A14EF00073051 /* TCFileSend.h */,
+				F7A91BA4182A14EF00073051 /* TCFileSend.m */,
+				F7A91BA5182A14EF00073051 /* TCImage.h */,
+				F7A91BA6182A14EF00073051 /* TCImage.m */,
+				F7A91BA7182A14EF00073051 /* TCInfo.h */,
+				F7A91BA8182A14EF00073051 /* TCInfo.m */,
+				F7A91BA9182A14EF00073051 /* TCParser.h */,
+				F7A91BAA182A14EF00073051 /* TCParser.m */,
+				F7A91BAB182A14EF00073051 /* TCSocket.h */,
+				F7A91BAC182A14EF00073051 /* TCSocket.m */,
+				F7A91BAD182A14EF00073051 /* TCTools.h */,
+				F7A91BAE182A14EF00073051 /* TCTools.m */,
+			);
+			name = Core;
+			path = ../../dependencies/submodules/TorchatMac/TorChat/Sources/Core;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -329,26 +415,39 @@
 				F799543A1828D2DF009DECED /* AFURLSessionManager.m in Sources */,
 				F799547618291BA8009DECED /* AsyncSocket.m in Sources */,
 				F79954371828D2DF009DECED /* AFURLConnectionOperation.m in Sources */,
+				F7A91BB1182A14EF00073051 /* TCBuddy.m in Sources */,
+				F7A91BB5182A14EF00073051 /* TCFileReceive.m in Sources */,
 				F79954191828D2CF009DECED /* UIAlertView+AFNetworking.m in Sources */,
 				F79954341828D2DF009DECED /* AFHTTPSessionManager.m in Sources */,
+				F7A91BB3182A14EF00073051 /* TCConnection.m in Sources */,
 				F79954351828D2DF009DECED /* AFNetworkReachabilityManager.m in Sources */,
+				F7A91BB9182A14EF00073051 /* TCParser.m in Sources */,
+				F7A91BB6182A14EF00073051 /* TCFileSend.m in Sources */,
 				F754508718279C940042D6CE /* GCDAsyncSocket.m in Sources */,
+				F7A91BB8182A14EF00073051 /* TCInfo.m in Sources */,
 				F754507F18279C850042D6CE /* DDLog.m in Sources */,
 				F799541D1828D2CF009DECED /* UIWebView+AFNetworking.m in Sources */,
 				F79954361828D2DF009DECED /* AFSecurityPolicy.m in Sources */,
+				F7A91BB2182A14EF00073051 /* TCBuffer.m in Sources */,
 				F799541C1828D2CF009DECED /* UIProgressView+AFNetworking.m in Sources */,
+				F7A91BB4182A14EF00073051 /* TCCoreManager.m in Sources */,
+				F7A91BB0182A14EF00073051 /* NSData+TCTools.m in Sources */,
 				F79954181828D2CF009DECED /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				F799541B1828D2CF009DECED /* UIImageView+AFNetworking.m in Sources */,
 				F79954331828D2DF009DECED /* AFHTTPRequestOperationManager.m in Sources */,
 				F754508018279C850042D6CE /* DDTTYLogger.m in Sources */,
 				F79954171828D2CF009DECED /* AFNetworkActivityIndicatorManager.m in Sources */,
 				F754507D18279C850042D6CE /* DDASLLogger.m in Sources */,
+				F7A91BB7182A14EF00073051 /* TCImage.m in Sources */,
 				F754507E18279C850042D6CE /* DDFileLogger.m in Sources */,
+				F7A91BBB182A14EF00073051 /* TCTools.m in Sources */,
 				F754508218279C850042D6CE /* DispatchQueueLogFormatter.m in Sources */,
 				F754507C18279C850042D6CE /* DDAbstractDatabaseLogger.m in Sources */,
 				F799541A1828D2CF009DECED /* UIButton+AFNetworking.m in Sources */,
 				F79954381828D2DF009DECED /* AFURLRequestSerialization.m in Sources */,
 				F79954321828D2DF009DECED /* AFHTTPRequestOperation.m in Sources */,
+				F7A91BAF182A14EF00073051 /* NSArray+TCTools.m in Sources */,
+				F7A91BBA182A14EF00073051 /* TCSocket.m in Sources */,
 				F79954391828D2DF009DECED /* AFURLResponseSerialization.m in Sources */,
 				F754508118279C850042D6CE /* ContextFilterLogFormatter.m in Sources */,
 			);

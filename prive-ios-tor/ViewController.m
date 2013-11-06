@@ -8,6 +8,10 @@
 
 #import "ViewController.h"
 #import "AFNetworking.h"
+#import "TCCoreManager.h"
+#import "PRVTorchatConfig.h"
+#import "TCBuddy.h"
+
 
 #if !(TARGET_IPHONE_SIMULATOR)
 #import "HITorManager.h"
@@ -19,6 +23,7 @@
 
 @implementation ViewController {
     AFHTTPSessionManager *_manager;
+    TCCoreManager *_chatManager;
 }
 
 - (void)viewDidLoad
@@ -60,5 +65,15 @@
         NSLog(@"HTTP connection error: %@", error);
     }];
 }
+- (IBAction)startChat:(id)sender {
+    PRVTorchatConfig *config = [[PRVTorchatConfig alloc] init];
+    _chatManager = [[TCCoreManager alloc] initWithConfiguration:config];
+    [_chatManager start];
+}
+- (IBAction)sendMessage:(id)sender {
+    TCBuddy *buddy = [_chatManager buddyWithAddress:@"ktgja5s4ddmtbyyj"];
+    [buddy sendMessage:@"Hello MAH BOH!"];
+}
+
 
 @end

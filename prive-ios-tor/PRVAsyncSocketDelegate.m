@@ -12,15 +12,20 @@
 
 - (void)onSocket:(AsyncSocket *)sock didConnectToHost:(NSString *)host port:(UInt16)port {
     NSLog(@"Socket did connect to host %@:%d",host, port);
+    
+    NSData *data = [@"hello\r\n" dataUsingEncoding:NSUTF8StringEncoding];
+    
+    //[sock writeData:data withTimeout:-1 tag:1];
 }
 
 - (BOOL)onSocketWillConnect:(AsyncSocket *)sock {
     NSDictionary *proxySettings = @{(__bridge NSString *)kCFStreamPropertySOCKSProxyHost : @"127.0.0.1",
-                                    (__bridge NSString *)kCFStreamPropertySOCKSProxyPort : @(9150)};
+                                    (__bridge NSString *)kCFStreamPropertySOCKSProxyPort : @(9050)};
     
     
-    CFWriteStreamRef stream = sock.getCFWriteStream;
-    CFWriteStreamSetProperty(stream, kCFStreamPropertySOCKSProxy, (__bridge CFDictionaryRef)proxySettings);
+
+    CFWriteStreamSetProperty(sock.getCFWriteStream, kCFStreamPropertySOCKSProxy, (__bridge CFDictionaryRef)proxySettings);
+    CFReadStreamSetProperty(sock.getCFReadStream, kCFStreamPropertySOCKSProxy, (__bridge CFDictionaryRef)proxySettings);
     
     return YES;
 }
